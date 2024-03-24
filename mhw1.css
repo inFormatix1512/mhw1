@@ -1,116 +1,101 @@
 body {
     font-family: Arial, sans-serif;
-}
-
-nav ul {
-    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline-block;
+header nav {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+header nav .logo {
+    height: 50px;
     margin-right: 20px;
 }
 
-.attivita-item {
-    margin-bottom: 20px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Spazia gli elementi tra loro */
-    padding: 10px; /* Distanza dal bordo dell'header */
-}
-
-#logo {
-    margin-right: auto; /* Spinge tutto il resto verso destra */
-    height: 50px; /* Altezza del logo, da aggiustare a piacere */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+header nav ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-nav ul li {
-    margin-left: 20px; /* Distanza tra i link */
+header nav ul li {
+    float: left;
 }
 
-#welcome-section {
-    background-image: url('https://th.bing.com/th/id/OIP.SKfWj9pm6ULP2pWAUnhyHgEyDM?rs=1&pid=ImgDetMain');
-    background-size: cover;
-    background-position: center;
-    height: 50vh; /* Imposta l'altezza a metà dell'altezza della viewport */
-    display: flex;
-    align-items: center; /* Centra verticalmente il contenuto */
-}
-
-.text-container {
-    margin-left: 10%; /* Distanza dal lato sinistro della sezione */
-}
-
-.text-box {
-    color: white; /* Colore del testo */
-    margin: 10px 0; /* Distanza tra i rettangoli */
-    padding: 10px; /* Spazio intorno al testo all'interno dei rettangoli */
-    width: fit-content; /* Larghezza basata sul contenuto */
-}
-
-#blue-box {
-    background-color: blue;
-}
-
-#red-box {
-    background-color: red;
-}
-
-#yellow-box {
-    background-color: yellow;
-    color: black; /* Cambia il colore del testo per contrasto */
-}
-
-.activities-section {
-    display: flex;
-    justify-content: space-around;
-}
-
-.activity {
-    color: red;
-    width: 50%;
-    padding: 100px;
+header nav ul li a {
+    display: block;
+    color: white;
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    position: relative; /* Necessario per il posizionamento del testo */
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.activity::before {
-    content: '';
+header nav ul li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.bg-image {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Opacità nera per rendere il testo più leggibile */
-    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
-.activity > * {
-    position: relative;
-    z-index: 1;
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-#universitaria {
-    background-image: url('https://www.deabyday.tv/.imaging/default/article/guides/sport-e-fitness/allenarsi/Come-correre-in-salita-sul-tapis-roulant/imageOriginal.jpg');
+.image-box {
+    margin: 0 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
 }
 
-#agonistica {
-    background-image: url('https://th.bing.com/th/id/R.01e944cc5d8248d7f3862e4731b78e64?rik=A6yeNWa3QV%2bChA&pid=ImgRaw&r=0');
+.image-box img {
+    width: 100%;
+    height: auto;
 }
 
-#campus-sportivo {
-    background-image: url('https://th.bing.com/th/id/OIP.JdXCTH1b1_xpy4KO1SidLwHaE8?rs=1&pid=ImgDetMain');
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
