@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.attivita-item {
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spazia gli elementi tra loro */
+    padding: 10px; /* Distanza dal bordo dell'header */
+}
+
+#logo {
+    margin-right: auto; /* Spinge tutto il resto verso destra */
+    height: 50px; /* Altezza del logo, da aggiustare a piacere */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Distanza tra i link */
+}
+
+#welcome-section {
+    background-image: url('https://th.bing.com/th/id/OIP.SKfWj9pm6ULP2pWAUnhyHgEyDM?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Imposta l'altezza a metà dell'altezza della viewport */
+    display: flex;
+    align-items: center; /* Centra verticalmente il contenuto */
+}
+
+.text-container {
+    margin-left: 10%; /* Distanza dal lato sinistro della sezione */
+}
+
+.text-box {
+    color: white; /* Colore del testo */
+    margin: 10px 0; /* Distanza tra i rettangoli */
+    padding: 10px; /* Spazio intorno al testo all'interno dei rettangoli */
+    width: fit-content; /* Larghezza basata sul contenuto */
+}
+
+#blue-box {
+    background-color: blue;
+}
+
+#red-box {
+    background-color: red;
+}
+
+#yellow-box {
+    background-color: yellow;
+    color: black; /* Cambia il colore del testo per contrasto */
+}
+
+.activities-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.activity {
+    color: red;
+    width: 50%;
+    padding: 100px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Necessario per il posizionamento del testo */
+}
+
+.activity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Opacità nera per rendere il testo più leggibile */
+    z-index: 0;
+}
+
+.activity > * {
+    position: relative;
+    z-index: 1;
+}
+
+#universitaria {
+    background-image: url('https://www.deabyday.tv/.imaging/default/article/guides/sport-e-fitness/allenarsi/Come-correre-in-salita-sul-tapis-roulant/imageOriginal.jpg');
+}
+
+#agonistica {
+    background-image: url('https://th.bing.com/th/id/R.01e944cc5d8248d7f3862e4731b78e64?rik=A6yeNWa3QV%2bChA&pid=ImgRaw&r=0');
+}
+
+#campus-sportivo {
+    background-image: url('https://th.bing.com/th/id/OIP.JdXCTH1b1_xpy4KO1SidLwHaE8?rs=1&pid=ImgDetMain');
+}
